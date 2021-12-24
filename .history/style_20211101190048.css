@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+body {
+    background: #eee;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+h1 {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 600px;
+    width: 100%;
+    z-index: 10;
+    padding: 10px 0;
+    text-align: center;
+    background: #517D99;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+}
+
+#chat-field {
+    height: 100vh;
+    padding: 70px 0 140px 0;
+    background: #b4cce3;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* スクロールバー消す */
+#chat-field::-webkit-scrollbar {
+    display: none;
+}
+
+#chat-ul {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+#chat-ul li {
+    background-color: #fff;
+    position: relative;
+    margin: 0 auto -10px 10px;
+    word-wrap: break-word;
+    display: inline-block;
+    border-radius: 6px;
+    min-height: 30px;
+    max-width: 220px;
+    padding: 7px 18px 7px 13px;
+    line-height: 1.7em;
+
+}
+#chat-ul li::before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    top: 50%;
+    left: -8px;
+    transform: rotate(45deg) translateY(-50%);
+    background-color: #fff;
+
+}
+
+#chat-ul li:nth-child(odd) {
+    /* opacity: 0; */
+}
+#chat-ul li:nth-child(even) {
+    margin: 0 10px 10px auto;
+    background-color: #a4e496;
+}
+
+#chat-ul li:nth-child(even)::before {
+    background-color: #a4e496;
+    left: calc(100% - 8px);
+}
+
+#input-field {
+    position: fixed;
+    width: 100vw;
+    overflow-x: scroll;
+    bottom: 35px;
+    box-sizing: border-box;
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+    margin: 0 auto;
+}
+
+#select-list
+

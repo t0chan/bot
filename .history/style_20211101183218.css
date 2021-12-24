@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+body {
+    background: #eee;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+h1 {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 600px;
+    width: 100%;
+    z-index: 10;
+    padding: 10px 0;
+    text-align: center;
+    background: #517D99;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+}
+
+#chat-field {
+    height: 100vh;
+    padding: 70px 0 140px 0;
+    background: #b4cce3;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* スクロールバー消す */
+#chat-field::-webkit-scrollbar {
+    display: none;
+}
+
+#chat-ul {
+    display: flex;
+    flex-direction: column;
+}
